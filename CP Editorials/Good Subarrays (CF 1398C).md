@@ -1,0 +1,1 @@
+Let’s use prefix sums. If $p_i = \sum_{i=1}^i a_i$ then semi-closed range $(l, r]$ satisfies the constraint when $p_r - p_l = r-l$. Rearrange to get $p_r - r = p_l - l$. The quantity of such $(l, r)$ pairs can then easily be counted by using map to store the quantity of each possible value of $p_i - i$.

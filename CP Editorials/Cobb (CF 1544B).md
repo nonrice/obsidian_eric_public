@@ -1,0 +1,5 @@
+We will take advantage of the idea that k is small.
+
+Assume you have a potential answer. To better your answer, you may consider to increase the $ij$ term, at the expense of potentially decreasing the $-k(a_i\vert a_j)$ term. Since the maximum value of $a_i\vert a_j$ can be bounded by $2n$, the $-k(a_i\vert a_j)$ term can be decreased by at most $2kn$- so if it is possible to choose a new answer such that the $ij$ term increases by more than $2kn$, then it is guaranteed that the new answer is better, and the original answer is not optimal.
+
+This argument shows that a significant portion of pairs should never be considered, since there exists a construction to find a better pair; so we only have to consider pairs whose $ij$ terms cannot be increased by $2kn$. There are only $\mathcal{O}(kn)$ of such pairs to check, which runs in time since $kn = 3*10^8$.
